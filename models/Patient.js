@@ -10,6 +10,10 @@ const patientSchema = new mongoose.Schema({
     required: true,
     unique: true,
   },
+  password: {
+    type: String,
+    required: true,
+  },
   PhoneNumber: {
     type: String,
     required: true,

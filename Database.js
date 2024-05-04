@@ -1,6 +1,8 @@
 const mongoose = require("mongoose");
-
-mongoose.connect("mongodb://127.0.0.1:27017/test");
+require("dotenv").config();
+const LocalURL = process.env.DB_LOCAL_URL;
+const GlobalURL = process.env.DB_GLOBAL_URL;
+mongoose.connect(GlobalURL);
 
 const db = mongoose.connection;
 
