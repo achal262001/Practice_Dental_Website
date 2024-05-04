@@ -20,4 +20,6 @@ app.get("/hellow", (req, res) => {
   res.send("Randi");
 });
 
+// its my own Practice Code
+
 app.listen(3000, () => console.log("server listen at 3000"));
